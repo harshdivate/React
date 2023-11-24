@@ -31,8 +31,8 @@ function App() {
             backgroundImage: `url('https://images.pexels.com/photos/18924410/pexels-photo-18924410/free-photo-of-a-church-on-a-rock-in-petrovac-montenegro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
     >
-        <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full flex items-center justify-center">
+            <div className="w-full max-w-md  border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
