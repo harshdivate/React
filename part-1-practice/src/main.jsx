@@ -2,15 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import Header from './components/Header/Header'
+import Home from './components/Home/Home';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" elemenent={<Layout/>}>
-      <Route path="" element={<Header/>}></Route>
+    <Route path="/" element={<Layout/>}>
+      <Route path="" element={<Home/>}></Route>
+      
 
     </Route>
   )

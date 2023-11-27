@@ -14,20 +14,15 @@ function Header() {
       </Link>
     </div>
     <div className='flex justify-around items-center  w-2/5'>
-       
-                <NavLink to="/" >
+            <NavLink to="/" >
                    <p className='hover:text-[#61DBFB]'>Home</p>
-                </NavLink>
-           
+            </NavLink>
             <NavLink to="/currency">
-                    
-                    <p className='hover:text-[#61DBFB]'>Currency</p>
-                </NavLink>
-            
+                <p className='hover:text-[#61DBFB]'>Currency</p>
+            </NavLink>
             <NavLink to="/movie">
-                   
                     <p className='hover:text-[#61DBFB]'>Movie</p>
-                </NavLink>
+            </NavLink>
     </div>
     </div>
   </nav>
