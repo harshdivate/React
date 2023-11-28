@@ -46,6 +46,8 @@ function MovieDetails() {
                     <p><span className='font-bold text-xl'>Revenue:</span>{movieDetails.revenue}</p>
                 </div>
            </div>
+
+          
     </div>
   )
 }

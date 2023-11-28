@@ -8,6 +8,7 @@ import Header from './components/Header/Header'
 import Home from './components/Home/Home';
 import Movie from './components/Movie/Movie';
 import MovieDetails from './components/MovieDetails/MovieDetails';
+import Search from './components/Search/Search';
 
 
 const router = createBrowserRouter(
@@ -18,8 +19,7 @@ const router = createBrowserRouter(
     
       </Route>
       <Route path="/movie/:id" element={<MovieDetails/>}></Route>
-      
-
+      <Route path="/search" element={<Search/>}></Route>
     </Route>
   )
 )

@@ -23,6 +23,9 @@ function Header() {
             <NavLink to="/movie">
                     <p className='hover:text-[#61DBFB]'>Movie</p>
             </NavLink>
+            <NavLink to="/search">
+                    <p className='hover:text-[#61DBFB]'>Search</p>
+            </NavLink>
     </div>
     </div>
   </nav>
