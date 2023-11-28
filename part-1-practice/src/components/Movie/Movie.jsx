@@ -29,7 +29,7 @@ function Movie() {
     console.log(movies);
     
     return (
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap m-4 '>
             {
                 movies.map((m)=>{
                    const {
@@ -40,13 +40,13 @@ function Movie() {
                     poster_path,
 
                    } = m;
-                   const image_url = `https://image.tmdb.org/t/p/w300${poster_path}`
+                   const image_url = `https://image.tmdb.org/t/p/w200${poster_path}`
                    const movie_url = `/movie/${id}`
                    return (
-                            <div id={id} class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                <a href="#">
+                            <div id={id} class="max-w-xs p-4 m-2  bg-white border border-gray-200 rounded-lg shadow dark:bg-[#4a4e69] dark:border-gray-700">
+                                <Link to={movie_url} className='flex justify-center'>
                                     <img class="rounded-t-lg" src={image_url} alt="" />
-                                </a>
+                                </Link>
                                 <div class="p-5">
                                     <a href="#">
                                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>

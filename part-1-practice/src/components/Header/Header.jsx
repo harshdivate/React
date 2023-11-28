@@ -4,7 +4,7 @@ import {Link,NavLink} from 'react-router-dom';
 
 function Header() {
   return (
-    <header className='shadow sticky min-w-lg duration-200 '>
+    <header className='shadow sticky top-0 min-w-lg duration-200 '>
     <nav className='py-2 '>
       <div  className='flex font-bold justify-between'>
     <div className='flex items-center'>

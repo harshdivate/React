@@ -28,10 +28,23 @@ function MovieDetails() {
     // const {original_title,backdrop_path,budget,homepage,overview,release_date} = movieDetails;
 
   return (
-    <div>MovieDetails:{id}
-           <div>
-                <div>Title : {movieDetails.original_title}</div>
-                <div>Release Date : {movieDetails.release_date}</div>
+    <div className='h-screen border border-green p-4 m-4'>
+            <div className='text-center font-bold text-4xl my-4'>Movie Details</div>
+           <div className='w-full  flex justify-around border border-black bg-[#001524]'>
+                <div className='m-6 p-4 bg-[#84a98c] h-fit'>
+                    {/* Photo */}
+                    <div>
+                        <img src={'https://image.tmdb.org/t/p/w400'+movieDetails.poster_path} ></img>
+                    </div>
+                </div>
+                <div className='border text-white  border-black max-w-lg flex flex-col justify-evenly '>
+                    {/* Detaisl */}
+                    <p className='text-3xl font-bold font-mono'>{movieDetails.title}</p>
+                    <p><span className='font-bold text-xl'>Overview:</span>{movieDetails.overview}</p>
+                    <p><span className='font-bold text-xl'>Release Date:</span>{movieDetails.release_date}</p>
+                    <p><span className='font-bold text-xl'>Budget:</span>{movieDetails.budget}</p>
+                    <p><span className='font-bold text-xl'>Revenue:</span>{movieDetails.revenue}</p>
+                </div>
            </div>
     </div>
   )
