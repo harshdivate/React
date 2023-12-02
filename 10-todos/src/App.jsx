@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import TodoForm from './components/TodoForm'
-import { TodoProvider } from './context/TodoContext'
+import TodoItem from './components/TodoItem'
+import { TodoProvider, useTodo } from './context/TodoContext'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   }
 
   const toggleComplete = (id) => {
-    setTodos((prev)=> prev.map((prevTodo)=> prevTodo.id === id ? {...prev,completed: !prevTodo.completed} : prevTodo))
+    setTodos((prev)=> prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo,completed: !prevTodo.completed} : prevTodo))
   }
 
   useEffect(()=>{
@@ -43,6 +44,13 @@ function App() {
                     </div>
                     <div className="flex flex-wrap gap-y-3">
                         {/*Loop and Add TodoItem here */}
+                        {
+                          todos.map((todo)=>(
+                            <div key={todo.id} className='w-full'> 
+                              <TodoItem todo={todo}/>
+                            </div>
+                          ))
+                        }
                     </div>
                 </div>
             </div>
